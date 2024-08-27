@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap");
+
+:root {
+  --lg-font: "Kaisei Tokumin", serif;
+  --sm-font: "Poppins", sans-serif;
+  --c-nav: #d5a939;
+  --c-line: #d5a939;
+  --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+  --c-brand: #d5a939;
+  --c-brand-light: #d5a939;
+  --c-grey: #212529;
+  --c-footer: #d5a939;
+  --c-swhite: #fbfaf5;
+  --c-brand-rgb: 169, 169, 169;
+}
+
+body {
+  /* background-color: #eaeaea; */
+  font-family: var(--sm-font);
+  color: #2d2d2d;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white;
+  /* overflow-y: hidden; */
+  /* min-height: 4000px; */
+}
+
+.section-padding {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* NAVBAR */
+/* Box-Shadow : perintah untuk membuat bayangan pada sebuah element. */
+.navbar {
+  box-shadow: var(--box-shadow);
+  background-color: var(--c-nav);
+}
+
+#logos {
+  color: var(--c-grey);
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: var(--c-swhite);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--c-grey);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--c-grey);
+}
+
+.navbar-nav .nav-link.active:hover {
+  color: var(--c-nav);
+}
+
+.navbar-brand img {
+  width: auto;
+  height: 40px;
+}
+
+.form-control {
+  font-size: 14px;
+}
+/* responsive layar besar */
+
+.btn {
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 10px 24px;
+}
+
+.btn-brand {
+  background-color: var(--c-grey);
+  border-color: var(--c-grey);
+  color: var(--c-swhite);
+}
+
+.btn-brand:hover {
+  background-color: var(--c-swhite);
+  border-color: var(--c-swhite);
+  color: var(--c-brand);
+}
+
+.btn-home {
+  background-color: #e0b973;
+  border-color: #e0b973;
+  color: var(--c-swhite);
+  width: 50%;
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 13px;
+}
+
+.btn-home:hover {
+  background-color: var(--c-swhite);
+  border-color: var(--c-swhite);
+  color: var(--c-brand);
+}
+
+.btn.btn-rooms {
+  align-items: center;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: #000;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  justify-content: center;
+}
+
+.btn.btn-rooms:hover {
+  background-color: var(--c-grey);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: var(--c-line);
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn.btn-contact {
+  align-items: center;
+  background-color: var(--c-brand);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: #000;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  justify-content: center;
+}
+
+.btn.btn-contact:hover {
+  background-color: var(--c-grey);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: var(--c-swhite);
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn.btn-reservation {
+  align-items: center;
+  background-color: var(--c-brand);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: #000;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  justify-content: center;
+}
+
+.btn.btn-reservation:hover {
+  background-color: var(--c-grey);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  color: var(--c-swhite);
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.button-end {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 10px;
+}
+/* Home */
+#home {
+  background-image: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(/img/homepage.jpg);
+  background-position: center;
+  background-position: fixed;
+  background-size: cover;
+}
+
+/* FACILITIES */
+.fasilitas {
+  padding: 20px 20px;
+}
+
+.option img {
+  height: 55vh;
+  width: 100%;
+}
+
+/* ROOMS */
+#rooms {
+  padding: 25px;
+}
+.option-rooms img {
+  height: 300px;
+  width: auto;
+}
+
+.option-rooms {
+  padding: 20px;
+}
+
+#rooms.h5 {
+  text-align: center;
+}
+
+/* CONTACT */
+.col-md-7 {
+  padding: 20px;
+}
+.col-md-5 {
+  background: var(--c-brand);
+  padding: 20px;
+  color: white;
+}
+.form-control {
+  height: 52px;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  border-radius: 2px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bi {
+  font-size: 20px;
+}
+.d-flex p {
+  font-size: 18px;
+  padding-left: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+  }
+}
+
+/* RESERVATION */
+.navbar-title {
+  flex-grow: 1;
+  text-align: center;
+}
+
+#reservation {
+  padding-top: 50px;
+}
